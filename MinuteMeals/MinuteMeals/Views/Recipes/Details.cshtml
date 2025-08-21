@@ -1,0 +1,8 @@
+﻿@model Recipe
+
+<h2>@Model.Name</h2>
+<p><strong>Cooking Time:</strong> @Model.CookingTimeInMinutes min</p>
+<p><strong>Ingredients:</strong> @Model.Ingredients</p>
+<p><strong>Steps:</strong> @Model.Steps</p>
+
+<a asp-controller="Recipes" asp-action="Index">Back to Recipes</a>

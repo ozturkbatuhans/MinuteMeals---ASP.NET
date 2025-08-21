@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Recipe>
+
+<h2>Recipes</h2>
+@foreach (var recipe in Model)
+{
+    <div>
+        <h3>@recipe.Name (@recipe.CookingTimeInMinutes min)</h3>
+        <a asp-controller="Recipes" asp-action="Details" asp-route-id="@recipe.Id">View Details</a>
+    </div>
+}
+

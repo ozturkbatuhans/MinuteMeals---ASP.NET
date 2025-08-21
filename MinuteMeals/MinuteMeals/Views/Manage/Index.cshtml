@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Recipe>
+
+<h2>Recipe Management</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Cooking Time (min)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var recipe in Model)
+        {
+            @await Html.PartialAsync("_RecipePartial", recipe)
+        }
+    </tbody>
+
+</table>
+
+<a asp-controller="Recipes" asp-action="Index" class="btn btn-primary">Back to Recipes</a>
