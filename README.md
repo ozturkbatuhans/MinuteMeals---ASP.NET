@@ -51,37 +51,70 @@ The project demonstrates:
 
 ##  Project Structure
 
-MinuteMeals/
-│
-├── Controllers/ # HomeController, RecipesController, ManageController
-├── Data/ # RecipeDbContext (InMemory DB + seed data)
-├── Models/ # Recipe.cs (model), ErrorViewModel.cs
-├── Views/
-│ ├── Shared/ # Layout and partial views
-│ ├── Home/ # Home and Privacy pages
-│ ├── Recipes/ # Index (list), Details (details view)
-│ └── Manage/ # Index (management list)
-│
-├── wwwroot/ # Static files (CSS, JS, Bootstrap)
-├── Program.cs # App entry point and service configuration
-├── appsettings.json # Configuration
-└── MinuteMeals.csproj
+    MinuteMeals/
+    │
+    ├── Controllers/             # Contains HomeController, RecipesController, ManageController
+    ├── Data/                    # RecipeDbContext (InMemory DB + seed data)
+    ├── Models/                  # Recipe.cs (model), ErrorViewModel.cs
+    ├── Views/
+    │   ├── Shared/              # Layout and partial views
+    │   ├── Home/                # Home and Privacy pages
+    │   ├── Recipes/             # Index (list), Details (details view)
+    │   └── Manage/              # Index (management list)
+    │
+    ├── wwwroot/                 # Static files (CSS, JS, Bootstrap)
+    ├── Program.cs               # Application entry point and service configuration
+    ├── appsettings.json         # Configuration file
+    └── MinuteMeals.csproj       # Project file
 
-
----
+------------------------------------------------------------------------
 
 ##  Getting Started
 
 ### Prerequisites
-- [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+
+-   [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 
 ### Running the Application
 
 Clone the repository:
 
-```bash
+``` bash
 git clone [repository-url]
 cd MinuteMeals
+```
+
+Run the application:
+
+``` bash
 dotnet run
+```
+
+Navigate to the URL shown in the console output, e.g.:\
+ <https://localhost:7127>
+
+------------------------------------------------------------------------
+
+##  Assignment Requirements Checklist
+
+✔️ Model with required properties\
+✔️ At least 10 seeded recipes in the database\
+✔️ Home page with list of recipes (using partial view)\
+✔️ Detail page with name, time, ingredients, and steps\
+✔️ Navigation via `asp-route-id`\
+✔️ Back navigation to home page\
+✔️ Recipe management page with Bootstrap-styled table\
+✔️ Partial views for rendering list items
+
+------------------------------------------------------------------------
+
+##  Contributing
+
+This project was created for educational purposes.\
+Pull requests are welcome, but for major changes, please open an issue
+first.
+
+------------------------------------------------------------------------
+
 
 
